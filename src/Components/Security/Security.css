@@ -1,0 +1,11 @@
+.security{
+    margin-top: 6vh !important;
+}
+.security-cards{
+    background-color: white;
+    border: none;
+    border-radius: none;
+    border-bottom: 1px solid #5a5cff;
+    height: 250px;
+    overflow: hidden;
+}

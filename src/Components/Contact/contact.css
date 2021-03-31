@@ -1,0 +1,15 @@
+.contact{
+  margin-top: 6vh !important;
+}
+.input-field{
+  width: 60%;
+  min-height: 35px;
+  outline: none;
+}
+.submit-button{
+  background-color: #5a5cff;
+  color: white;
+}
+.submit-button:hover{
+  color: white;
+}

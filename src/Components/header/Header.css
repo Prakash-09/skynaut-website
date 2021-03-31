@@ -1,0 +1,20 @@
+.waveme-label{
+    color: #5a5cff;
+}
+.navigation-tabs{
+    color: #5a5cff;
+}
+.navigation-tabs:hover{
+    /* background-color: #5a5cff; */
+    border-bottom: 2px solid #5a5cff;
+    color: #5a5cff;
+    border-radius: 5px;
+}
+.navigation-tab-content:hover{
+    text-decoration: none;
+}
+.activeNavigation-tab{
+    border-bottom: 2px solid #5a5cff;
+    color: #5a5cff;
+    border-radius: 5px;
+}

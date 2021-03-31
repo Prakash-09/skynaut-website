@@ -1,0 +1,12 @@
+.privacy{
+    margin-top: 6vh;
+}
+.terms_service{
+    color: #5a5cff;
+}
+.terms_service:hover{
+    color: blue;
+}
+.or-list{
+    float: left;
+}
