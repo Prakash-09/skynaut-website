@@ -2,12 +2,12 @@
     margin-top: 6vh !important;
 }
 .feature-card-data{
-    background-color: white;
-    border-color: #5a5cff;
+    background-color: var(--color-six);
+    border-color: var(--color-one);
     height: 350px;
     overflow: hidden;
 }
 .feature-card-data:hover{
     border: none;
-    box-shadow: 0 2px 10px -1px #5a5cff;
+    box-shadow: 0 2px 10px -1px var(--color-one);
 }

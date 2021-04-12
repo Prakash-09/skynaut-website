@@ -22,13 +22,13 @@
 } */
 .team-card-container{
     background-color: white;
-    border: 1px solid #5a5cff;
+    border: 1px solid var(--color-one);
     height: 300px;
     overflow: hidden;
 }
 .team-card-container:hover{
     border: none;
-    box-shadow: 0 2px 10px -1px #5a5cff;
+    box-shadow: 0 2px 10px -1px var(--color-one);
 }
 .team-image-col{
     display: flex;
@@ -46,13 +46,13 @@
 }
 .advisor-card-container{
     background-color: white;
-    border: 1px solid #5a5cff;
+    border: 1px solid var(--color-one);
     height: 360px;
     overflow: hidden;
 }
 .advisor-card-container:hover{
     border: none;
-    box-shadow: 0 2px 10px -1px #5a5cff;
+    box-shadow: 0 2px 10px -1px var(--color-one);
 }
 .advisors-mem-img{
     height: 40%;

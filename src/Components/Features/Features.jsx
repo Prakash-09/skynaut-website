@@ -30,7 +30,7 @@ export class Features extends Component {
                             <Card className="feature-card-data mb-4 p-3 text-center">
                                 <Card.Body className="m-0 p-3">
                                     <p><img src={(CARD_IMGS[feature.type.toLowerCase()].image.default)} alt={CARD_IMGS[feature.type.toLowerCase()].label} height="15%" width="15%" /></p>
-                                    <small>{feature.type}</small>
+                                    <small className="text-muted">{feature.type}</small>
                                     <h5 className="my-1">{feature.name}</h5>
                                     <p className="mt-3">{feature.description}</p>
                                 </Card.Body>

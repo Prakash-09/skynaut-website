@@ -2,10 +2,10 @@
     margin-top: 6vh;
 }
 .terms_service{
-    color: #5a5cff;
+    color: var(--color-four);
 }
 .terms_service:hover{
-    color: blue;
+    color: var(--color-one);
 }
 .or-list{
     float: left;

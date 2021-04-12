@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
 
+:root {
+  --color-one: #5a5cff;
+  --color-two: rgb(224, 224, 224); /* LIGHT GRAY */
+  --color-three: #000000; /* BLACK */
+  --color-four: #494a5b;
+  --color-five: #fbfbff;
+  --color-six: #ffffff;
+}
 body{
   box-sizing: border-box;
-  background-color: white;
-  color: #5a5cff;
+  background-color: var(--color-six);
   font-family:'NOTO Sans JP', sans-serif;
 }
 .app{
@@ -53,7 +60,7 @@ body{
   margin-top: 4vh;
   text-decoration: none;
   font-size: 70px;
-  color: #5a5cff;
+  color: var(--color-three);
   text-align: justify;
 }
 .intro-sub{
@@ -63,7 +70,7 @@ body{
     font-size: 15px;
     font-weight: bold;
     line-height: 25px;
-    color: #5a5cff;
+    color: var(--color-three);
 }
 .sub-heading{
   font-size: 17px;
@@ -80,7 +87,7 @@ body{
   width: 30%;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(to right, #9e9ffc , #5a5cff, #9e9ffc);
+  background: linear-gradient(to right, var(--color-two) , var(--color-three), var(--color-two));
 }
 .description{
   font-size:19px;
@@ -104,19 +111,19 @@ body{
   width: 10px;
   height:10px;
   border-radius: 50%;
-  background-color: #5a5cff;
+  background-color: var(--color-three);
 }
 .slide-1,.slide-2,.slide-3,.slide-4,.incrementer{
   cursor:pointer
 }
 .card-content{
   font-size:20px;
-  color: navy;
+  color: var(--color-);
 }
 .name{
   font-size:15px;
   text-transform: uppercase;
-  color: navy;
+  color: var(--color-);
 }
 .reviewer{
   font-size:15px;
@@ -128,7 +135,7 @@ body{
   margin-top: 2vh;
   font-size: 20px;
   line-height: 25px;
-  color: #5a5cff;
+  color: var(--color-three);
   font-style: italic;
   font-weight: bold;
 }
@@ -138,7 +145,7 @@ body{
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  color: #5a5cff;
+  color: var(--color-three);
   opacity: .3;
   font-size: 13px;
   padding-top: 20px;
@@ -151,7 +158,7 @@ body{
 }
 
 .differentiator{
-  color: #5a5cff;
+  color: var(--color-three);
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
@@ -166,7 +173,7 @@ body{
     text-transform: uppercase;
     font-size: 15px;
     font-weight: bold;
-    color: #7d7fff;
+    color: var(--color-four);
 }
 .bottom-card,.bottom-card-container{
   margin-top: 3vh !important;
@@ -179,7 +186,7 @@ body{
   margin-right: auto;
   margin-top: 10vh;
   margin-bottom: 5vh;
-  background: linear-gradient(to right, #9e9ffc , #5a5cff, #9e9ffc);
+  background: linear-gradient(to right, var(--color-two) , var(--color-three), var(--color-two));
 }
 @media screen and (max-width:600px) {
   .hidden-content{

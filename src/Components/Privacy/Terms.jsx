@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Terms.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import data from '../../JsonData/PrivacyAndTermsData';
 import { Row, Col } from 'react-bootstrap';
 
@@ -16,20 +16,60 @@ class Terms extends Component {
                                 <Col>
                                     <h5>{term.category}</h5>
                                     <em>{term.lastUpdate}</em>
-                                    <p className="privacy-para p-2 my-2">{term.descriptionOne} <Link to="/Privacy"><u className="privacy-policy">{term.privacy}</u></Link></p>
-                                    <p>{term.descriptionTwo}</p>
+                                    <p className="my-2">{term.info}</p>
                                 </Col>
                             }
                             {!term.mainPara &&
                                 <Col>
-                                    <h5 className="my-3 font-weight-bold">{term.category}</h5>
-                                    <p>{term.description}</p>
-                                    {term.children.map((child, childIdx) =>
-                                        <ul key={childIdx}>
-                                            <li className="font-weight-bold mr-3 or-list">{child.category}</li>
-                                            <span>{child.description}</span>
-                                        </ul>
-                                    )}
+                                    <h3 className="my-3">{term.category}</h3>
+                                    <p>{term.description_p1}</p>
+                                    <p>{term.description_p2}</p>
+                                    <p>{term.description_p3}</p>
+                                    <p>{term.description_p4}</p>
+                                    <p>{term.description_p5}</p>
+
+                                    {term.child &&
+                                        term.children.map((child, childIdx) =>
+                                            <div key={childIdx}>
+                                                <h5 className="font-weight-bold">{child.title}</h5>
+                                                <p>{child.description_p1}</p>
+                                                {child.description_p1_child &&
+                                                    child.description_p1_children.map((descChild, descChildIdx) =>
+                                                        <ul key={descChildIdx}>
+                                                            <li className="font-weight-bold mr-2 or-list">{descChild.subTitle}</li>
+                                                            <span>{descChild.description}</span>
+                                                        </ul>
+                                                    )
+                                                }
+                                                <p>{child.description_p2}</p>
+                                                {child.description_p2_child &&
+                                                    child.description_p2_children.map((descChild, descChildIdx) =>
+                                                        <ul key={descChildIdx}>
+                                                            <li className="font-weight-bold mr-2 or-list">{descChild.subTitle}</li>
+                                                            <span>{descChild.description}</span>
+                                                        </ul>
+                                                    )
+                                                }
+                                                <p>{child.description_p3}</p>
+                                                {child.description_p3_child &&
+                                                    child.description_p1_children.map((descChild, descChildIdx) =>
+                                                        <ul key={descChildIdx}>
+                                                            <li className="font-weight-bold mr-2 or-list">{descChild.subTitle}</li>
+                                                            <span>{descChild.description}</span>
+                                                        </ul>
+                                                    )
+                                                }
+                                                <p>{child.description_p4}</p>
+                                                {child.description_p4_child &&
+                                                    child.description_p1_children.map((descChild, descChildIdx) =>
+                                                        <ul key={descChildIdx}>
+                                                            <li className="font-weight-bold mr-2 or-list">{descChild.subTitle}</li>
+                                                            <span>{descChild.description}</span>
+                                                        </ul>
+                                                    )
+                                                }
+                                            </div>
+                                        )}
                                 </Col>
                             }
                         </div>

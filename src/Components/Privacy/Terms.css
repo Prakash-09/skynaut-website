@@ -2,11 +2,11 @@
     margin-top: 6vh !important;
 }
 .privacy-para{
-    background-color: rgb(228, 227, 227);
+    background-color: var(--color-two);
 }
 .privacy-policy{
-    color: #5a5cff;
+    color: var(--color-four);
 }
 .privacy-policy:hover{
-    color: blue;
+    color: var(--color-one);
 }

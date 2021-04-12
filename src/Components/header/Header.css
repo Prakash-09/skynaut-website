@@ -1,20 +1,20 @@
 .waveme-label{
-    color: #5a5cff;
+    color: var(--color-one);
 }
 .navigation-tabs{
-    color: #5a5cff;
+    color: var(--color-three);;
 }
 .navigation-tabs:hover{
-    /* background-color: #5a5cff; */
-    border-bottom: 2px solid #5a5cff;
-    color: #5a5cff;
+    /* background-color: var(--color-one); */
+    border-bottom: 2px solid var(--color-one);
+    color: var(--color-three);
     border-radius: 5px;
 }
 .navigation-tab-content:hover{
     text-decoration: none;
 }
 .activeNavigation-tab{
-    border-bottom: 2px solid #5a5cff;
-    color: #5a5cff;
+    border-bottom: 2px solid var(--color-one);
+    color: var(--color-three);
     border-radius: 5px;
 }

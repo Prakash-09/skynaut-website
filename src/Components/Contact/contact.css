@@ -7,9 +7,9 @@
   outline: none;
 }
 .submit-button{
-  background-color: #5a5cff;
-  color: white;
+  background-color: var(--color-four);
+  color: var(--color-six);
 }
 .submit-button:hover{
-  color: white;
+  color: var(--color-six);
 }
